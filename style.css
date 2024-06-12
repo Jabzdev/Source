@@ -46,8 +46,18 @@ header nav button {
   justify-content: flex-start;
   gap: 20px;
   padding-top: 50px;
-  padding-right: 270px;
-
+}
+.sec-1 .box1 button {
+  height: 60px;
+  padding: 7px 20px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgb(11, 11, 44);
+  color: white;
+}
+.sec-1 .box1 input{
+  height: 50px;
+  border: 1px solid rgb(58, 58, 58);
 }
 
 .sec-1 .box2 img {
@@ -63,6 +73,7 @@ header nav button {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  flex-wrap: wrap;
 }
 .sec-2 div img {
   width: 40px;
@@ -70,7 +81,7 @@ header nav button {
 
 .sec-3{
   background-color: white;
-  padding: 20px 100px;
+  padding: 20px 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -78,9 +89,48 @@ header nav button {
 }
 
 .sec-3 h1{
-  width: 40%;
   font-size: 40px;
 }
-.sec-3 p{
-  width: 40%;
+
+
+
+
+@media screen and (max-width: 1000px) {
+  .sec-1{
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .sec-1 .box1{
+    width: 100%;
+    justify-content: center;
+    padding: 20px 50px;
+  }
+  .sec-1 .box2{
+    width: 100%;
+  }
+
+  .sec-2 {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .sec-2 div {
+    align-items: center;
+    text-align: center;
+  }
+
+  .sec-3 {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px){
+  header nav{
+    padding: 10px 20px;
+  }
+  header nav ul li {
+    display: none;
+  }
 }
